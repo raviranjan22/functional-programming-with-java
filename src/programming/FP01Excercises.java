@@ -24,6 +24,11 @@ public class FP01Excercises {
 		courses.stream()
 		.filter(course -> course.length()>4)
 		.forEach(System.out::println);
+		
+		System.out.println("Printing number of characters in courses***********");
+		courses.stream()
+		.map(course -> course.length())
+		.forEach(System.out::println);
 	}
 	
 	private static void printOddNumbersInListFunctional(List<Integer> numbers) {
